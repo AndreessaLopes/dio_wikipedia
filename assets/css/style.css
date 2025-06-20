@@ -1,0 +1,165 @@
+/* Reset geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo do site */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+/* Barra horizontal decorativa */
+.bar {
+    height: 3px;
+    background-color: #444;
+    margin-bottom: 20px;
+}
+
+/* Estrutura geral */
+.content {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 40px;
+    gap: 20px;
+}
+
+/* Cartões com fundo branco e sombra */
+.sidebar,
+.main,
+.anchors {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Larguras principais */
+.sidebar {
+    width: 20%;
+}
+
+.main {
+    width: 60%;
+}
+
+.anchors {
+    width: 20%;
+}
+
+/* Cabeçalhos */
+.sidebar h2,
+.anchors h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #222;
+    font-weight: bold;
+}
+
+.main h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #222;
+}
+
+/* Parágrafos */
+.main p {
+    margin-bottom: 15px;
+    text-align: justify;
+    font-size: 15px;
+}
+
+/* Galeria de imagens */
+.main div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+.main img {
+    width: 150px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Listas e links */
+.sidebar ul,
+.anchors ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.sidebar li,
+.anchors li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Links padrão e hover */
+.sidebar a,
+.anchors a,
+.footer a {
+    color: #0077cc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sidebar a:hover,
+.anchors a:hover,
+.footer a:hover {
+    color: #005fa3;
+    text-decoration: underline;
+}
+
+/* Player de áudio */
+.sidebar audio {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #eaeaea;
+    border-top: 1px solid #ccc;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sidebar,
+    .main,
+    .anchors {
+        width: 100%;
+    }
+
+    .main div {
+        justify-content: center;
+    }
+}
